@@ -1,0 +1,305 @@
+/***********************************************************************
+    Telnet.rc
+    The Dialog resource script of Telnet.xpm.
+
+	Copyright (C) 1999 by Hiroyoshi Kurohara
+		All Rights Reserved
+
+  	This file is part of Telnet XP module(transport DLL for NPCOMM).
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Library General Public
+    License as published by the Free Software Foundation; either
+    version 2 of the License, or (at your option) any later version.
+
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Library General Public License for more details.
+
+    You should have received a copy of the GNU Library General Public
+    License along with this library; if not, write to the Free
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+************************************************************************/
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "CompanyName", " \0"
+            VALUE "FileDescription", "Telnet\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Telnet\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "OriginalFilename", "Telnet.exe\0"
+            VALUE "ProductName", "  Telnet\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TELNET_SETTING DIALOGEX 0, 0, 265, 185
+STYLE DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        "オートコネクトの設定",IDC_STATIC,10,18,245,95
+    CONTROL         "ダイアルコマンドで接続",IDC_CONNECTONDIAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,28,81,10
+    EDITTEXT        IDC_DIAL_COMMAND1,21,53,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESTINATION1,90,53,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIAL_COMMAND2,21,63,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESTINATION2,90,63,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIAL_COMMAND3,21,73,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESTINATION3,90,73,64,12,ES_AUTOHSCROLL
+    LTEXT           "ダイアルコマンド",IDC_STATIC,21,43,55,8
+    LTEXT           "接続先アドレス",IDC_STATIC,90,43,65,8
+    GROUPBOX        "プロキシ設定",IDC_STATIC,10,120,148,55,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "プロキシ経由で接続",IDC_USE_PROXY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,130,81,10
+    EDITTEXT        IDC_PROXY_SERVER,23,155,77,12,ES_AUTOHSCROLL
+    LTEXT           "プロキシサーバのアドレス",IDC_STATIC,20,145,77,8
+    EDITTEXT        IDC_PROXY_PORT,105,155,30,12,ES_AUTOHSCROLL
+    LTEXT           "プロキシのポート",IDC_STATIC,104,145,50,10
+    LTEXT           "Wait Timeout :",IDC_STATIC,105,0,45,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_CONNTIMEOUT,75,0,30,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "Millisec",IDC_STATIC,45,0,25,10,NOT WS_VISIBLE
+    GROUPBOX        "ダイアルアップ接続",IDC_STATIC,160,119,95,56
+    CONTROL         "ダイアルアップ接続を起動",IDC_KICKRAS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,165,138,88,10
+    COMBOBOX        IDC_RASENTRIES,175,155,75,35,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         155,IDC_STATIC,"Static",SS_BITMAP,81,53,9,10
+    CONTROL         155,IDC_STATIC,"Static",SS_BITMAP,81,63,9,10
+    CONTROL         155,IDC_STATIC,"Static",SS_BITMAP,81,73,9,10
+    CTEXT           "",IDC_DIALOGLABEL,0,0,265,10,SS_SUNKEN
+    EDITTEXT        IDC_DESTINATION,90,94,64,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "Check2",IDC_PROTOCOL1,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,182,55,8,8
+    EDITTEXT        IDC_IPPORT1,154,53,25,12,ES_AUTOHSCROLL
+    LTEXT           "IPポート",IDC_STATIC,155,41,30,9
+    LTEXT           "TELNET protocol",IDC_STATIC,182,36,27,17,NOT WS_VISIBLE
+    CONTROL         "Check2",IDC_PROTOCOL2,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,182,65,8,8
+    EDITTEXT        IDC_IPPORT2,154,63,25,12,ES_AUTOHSCROLL
+    CONTROL         "Check2",IDC_PROTOCOL,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,182,96,8,8
+    EDITTEXT        IDC_IPPORT,154,94,25,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Check2",IDC_PROTOCOL3,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,182,75,8,8
+    EDITTEXT        IDC_IPPORT3,154,73,25,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TELNET_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 (ｱﾒﾘｶ) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TELNET_SETTING DIALOGEX 0, 0, 265, 158
+STYLE WS_CHILD | WS_VISIBLE
+FONT 9, "Times New Roman"
+BEGIN
+    GROUPBOX        "Auto Connect setting",IDC_STATIC,10,10,245,84
+    CONTROL         "Connect On Dial",IDC_CONNECTONDIAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,20,81,10
+    EDITTEXT        IDC_DIAL_COMMAND1,21,45,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESTINATION1,90,45,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIAL_COMMAND2,21,56,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESTINATION2,90,56,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIAL_COMMAND3,21,67,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESTINATION3,90,67,64,12,ES_AUTOHSCROLL
+    LTEXT           "Dial Command",IDC_STATIC,21,35,55,8
+    LTEXT           "Destination Address",IDC_STATIC,90,35,65,8
+    GROUPBOX        "Proxy Setting",IDC_STATIC,10,95,150,55,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Connect via proxy",IDC_USE_PROXY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,105,81,10
+    EDITTEXT        IDC_PROXY_SERVER,26,130,74,12,ES_AUTOHSCROLL
+    LTEXT           "Server Address",IDC_STATIC,26,120,50,8
+    EDITTEXT        IDC_PROXY_PORT,105,130,30,12,ES_AUTOHSCROLL
+    LTEXT           "IP-Port Number",IDC_STATIC,105,120,50,10
+    LTEXT           "Wait Timeout :",IDC_STATIC,105,0,45,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_CONNTIMEOUT,75,0,30,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "Millisec",IDC_STATIC,45,0,25,10,NOT WS_VISIBLE
+    GROUPBOX        "Dialup network",IDC_STATIC,164,95,91,55
+    CONTROL         "Kick DUN",IDC_KICKRAS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,175,111,45,10
+    COMBOBOX        IDC_RASENTRIES,175,125,75,35,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         155,IDC_STATIC,"Static",SS_BITMAP,81,46,9,10
+    CONTROL         155,IDC_STATIC,"Static",SS_BITMAP,81,56,9,10
+    CONTROL         155,IDC_STATIC,"Static",SS_BITMAP,81,67,9,10
+    LTEXT           "",IDC_DIALOGLABEL,0,0,265,8,SS_SUNKEN
+    EDITTEXT        IDC_DESTINATION,90,80,64,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "Check2",IDC_PROTOCOL1,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,182,47,8,8
+    EDITTEXT        IDC_IPPORT1,154,45,25,12,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,159,35,17,8
+    LTEXT           "TELNET protocol",IDC_STATIC,182,28,27,17,NOT WS_VISIBLE
+    CONTROL         "Check2",IDC_PROTOCOL2,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,182,57,8,8
+    EDITTEXT        IDC_IPPORT2,154,56,25,12,ES_AUTOHSCROLL
+    CONTROL         "Check2",IDC_PROTOCOL,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,183,81,8,8
+    EDITTEXT        IDC_IPPORT,155,80,25,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Check2",IDC_PROTOCOL3,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,182,68,8,8
+    EDITTEXT        IDC_IPPORT3,154,67,25,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TELNET_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英語 (ｱﾒﾘｶ) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

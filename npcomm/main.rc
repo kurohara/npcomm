@@ -1,0 +1,369 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SHEETFRAME DIALOGEX 0, 0, 231, 195
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "NPCOMM"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "疑似ポート",IDC_STATIC,10,4,40,30
+    PUSHBUTTON      "",IDC_LOCAL_PORT,15,14,30,15,BS_CENTER | BS_VCENTER
+    GROUPBOX        "モード",IDC_FUNCTION_MODE,58,4,117,30
+    COMBOBOX        IDC_SELMODE,65,15,100,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "オープン時にフォーカスを移動",IDC_CHANGEFOCUS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,38,108,8
+    CONTROL         "Log",IDC_MAKELOG,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE,184,30,40,10
+    EDITTEXT        IDC_DEBUG,176,10,48,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_STATUS,176,21,48,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    NOT WS_TABSTOP
+    CONTROL         "Tab1",IDC_SHEETTAB,"SysTabControl32",0x0,7,48,217,116,
+                    WS_EX_CONTROLPARENT
+    PUSHBUTTON      "OK",IDC_OK,62,174,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDC_CANCEL,119,174,50,14
+    PUSHBUTTON      "適用",IDC_APPLY,174,174,50,14
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 265, 185
+STYLE DS_NOIDLEMSG | WS_CHILD | WS_CLIPSIBLINGS
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,40,10,20,20
+    LTEXT           "",IDC_APPVERSION,40,45,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1997,1998 Hiroyoshi Kurohara all rights reserved.",
+                    IDC_STATIC,40,61,186,8
+    LTEXT           "About NPCOMM",IDC_DIALOGLABEL,175,0,90,10,NOT 
+                    WS_VISIBLE
+END
+
+IDD_SHUTDOWN DIALOG DISCARDABLE  0, 0, 129, 25
+STYLE DS_NOIDLEMSG | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+CAPTION "Exitting NPCOMM"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "終了中です。数秒程お待ちください",IDC_STATIC,5,5,120,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SHEETFRAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_SHUTDOWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 18
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_TRAY_NORMAL         ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_TRAY_ON             ICON    DISCARDABLE     "res\\tray_nor.ico"
+IDI_TRAY_STOP           ICON    DISCARDABLE     "res\\ico00002.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "My Popup"
+    BEGIN
+        MENUITEM "NPCOMM",                      ID_MENUITEM32775, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "メインパネル表示",            ID_SHOW
+        MENUITEM "Help",                        ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "NPCOMMを終了",                ID_EXIT
+    END
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "CompanyName", " \0"
+            VALUE "FileDescription", "npcomm\0"
+            VALUE "FileVersion", "2, 0, 0, 1\0"
+            VALUE "InternalName", "npcomm\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999 Hiroyoshi Kurohara\0"
+            VALUE "OriginalFilename", "npcomm.exe\0"
+            VALUE "ProductName", "  npcomm\0"
+            VALUE "ProductVersion", "2, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "ﾊﾞｰｼﾞｮﾝ情報(NPCOMM) (&A)..."
+    IDS_SHAREWARENOTIFY     "NPCOMMはシェアウェアです。\n試用以外の目的で継続してご使用になりたい方は、\nレジストレーションして頂く必要があります。"
+    IDS_INVALIDKEY          "登録名または登録キーが正しくありません"
+    IDS_CONNRESET           "擬似COMポートの使用中にトランスポートの接続が切れました。\n擬似COMポートをクローズして下さい。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SHUTDOWNMES         "終了中"
+    IDS_ALREADYRUNNING      "すでにNPCOMMは起動しています。"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 (ｱﾒﾘｶ) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SHEETFRAME DIALOGEX 0, 0, 235, 155
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "NPCOMM"
+FONT 9, "Times New Roman", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Local Port",IDC_STATIC,10,3,40,25
+    PUSHBUTTON      "",IDC_LOCAL_PORT,15,13,30,12,BS_CENTER | BS_VCENTER
+    GROUPBOX        "Function mode",IDC_FUNCTION_MODE,58,3,117,25,WS_GROUP
+    CONTROL         "Change Focus on Open",IDC_CHANGEFOCUS,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,10,28,75,8
+    EDITTEXT        IDC_DEBUG,180,5,48,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_STATUS,180,17,48,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Tab1",IDC_SHEETTAB,"SysTabControl32",0x0,7,38,221,93,
+                    WS_EX_CONTROLPARENT
+    CONTROL         "Log",IDC_MAKELOG,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,180,29,35,10
+    COMBOBOX        IDC_SELMODE,63,13,108,43,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "OK",IDC_OK,65,137,50,11
+    PUSHBUTTON      "Cancel",IDC_CANCEL,122,137,50,11
+    PUSHBUTTON      "Apply",IDC_APPLY,178,137,50,11
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 265, 158
+STYLE DS_CONTROL | WS_CHILD
+FONT 9, "Times New Roman"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,40,10,20,20
+    LTEXT           "",IDC_APPVERSION,40,45,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1997 Hiroyoshi Kurohara all rights reserved.",
+                    IDC_STATIC,40,61,164,8
+    LTEXT           "About NPCOMM",IDC_DIALOGLABEL,175,0,90,10,NOT 
+                    WS_VISIBLE
+END
+
+IDD_SHUTDOWN DIALOG DISCARDABLE  0, 0, 179, 14
+STYLE DS_NOIDLEMSG | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+CAPTION "Exitting NPCOMM"
+FONT 9, "Times New Roman"
+BEGIN
+    LTEXT           "Now exitting NPCOMM, Please Wait for several seconds.",
+                    IDC_STATIC,5,0,165,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SHEETFRAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_SHUTDOWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "My Popup"
+    BEGIN
+        MENUITEM "NPCOMM",                      ID_MENUITEM32775, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Show Main Panel",             ID_SHOW
+        MENUITEM "Help",                        ID_HELP
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "Exit NPCOMM",                 ID_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "About (NPCOMM) (&A)..."
+    IDS_SHAREWARENOTIFY     "This is unregistered copy of NPCOMM\nYou can use this copy for evaluation use only.\n"
+    IDS_INVALIDKEY          "Key code or user name you specified is invalid"
+    IDS_CONNRESET           "Transport connection has been reset \nduring using pseudo port.\nPlease close pseudo port as soon as possible."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SHUTDOWNMES         "Shutting down device"
+    IDS_ALREADYRUNNING      "NPCOMM is already running."
+END
+
+#endif    // 英語 (ｱﾒﾘｶ) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

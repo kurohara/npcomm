@@ -1,0 +1,327 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif\r\n"
+    "#include ""res\\instnp.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\instnp.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INSTNP_DIALOG DIALOGEX 0, 0, 190, 183
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Pseudo Serial Device Installer"
+FONT 10, "ＭＳ Ｐゴシック"
+BEGIN
+    PUSHBUTTON      "Install",IDC_INSTALL,13,58,45,15
+    PUSHBUTTON      "Uninstall",IDC_DEINSTALL,62,58,45,15
+    PUSHBUTTON      "Start now",IDC_START,112,58,41,15
+    COMBOBOX        IDC_PPORTNAME,13,27,35,40,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Start p-serial driver at system start up",IDC_AUTOSTART,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,43,155,10
+    GROUPBOX        "NPCOMM as SERVICE",IDC_SERVICEFRAME,7,89,176,88
+    CHECKBOX        "Service installed",IDC_ISSERVICE,13,115,118,10
+    EDITTEXT        IDC_EXTRAARGUMENTS,12,140,161,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Extra arguments",IDC_ARGLABEL,13,129,150,8
+    PUSHBUTTON      "Install",IDC_INSTALLSERVICE,13,156,45,15,WS_DISABLED
+    PUSHBUTTON      "Uninstall",IDC_DEINSTALLSERVICE,62,156,45,15,
+                    WS_DISABLED
+    COMBOBOX        IDC_PPORTNAME1,62,27,35,40,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PPORTNAME2,112,27,35,40,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "P-Serial driver",IDC_DRIVERFRAME,7,7,176,73
+    CONTROL         "NPCOMM",IDC_NPCOMM,"Button",BS_AUTORADIOBUTTON,13,101,
+                    42,8
+    CONTROL         "NPCOMM1",IDC_NPCOMM1,"Button",BS_AUTORADIOBUTTON,61,101,
+                    46,8
+    CONTROL         "NPCOMM2",IDC_NPCOMM2,"Button",BS_AUTORADIOBUTTON,112,
+                    101,52,8
+    LTEXT           "PCOMM",IDC_PNAME,15,16,35,8
+    LTEXT           "PCOMM1",IDC_PNAME1,63,17,35,8,WS_DISABLED
+    LTEXT           "PCOMM2",IDC_PNAME2,113,17,35,8,WS_DISABLED
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,2
+ PRODUCTVERSION 1,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "INSTNP MFC ｱﾌﾟﾘｹｰｼｮﾝ\0"
+            VALUE "FileVersion", "1, 0, 0, 2\0"
+            VALUE "InternalName", "INSTNP\0"
+            VALUE "LegalCopyright", "Copyright (C) 1997, 1998 Hiroyoshi Kurohara\0"
+            VALUE "OriginalFilename", "INSTNP.EXE\0"
+            VALUE "ProductName", "INSTNP ｱﾌﾟﾘｹｰｼｮﾝ\0"
+            VALUE "ProductVersion", "1, 0, 0, 2\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_INSTNP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "ﾊﾞｰｼﾞｮﾝ情報(instnp) (&A)..."
+    IDS_OSERR               "このプログラムはWindowsNTシステム上でのみ動作します。\nWindows95上では使用する必要はありません。"
+    IDS_APP_RUNNING         "このプログラムはNPCOMMが起動していると動作できません。\nNPCOMM.exeと、疑似ポート使用しているプログラムを終了させて、\nその後このプログラムを起動してください。"
+    IDS_SERVICEINSTALLED    "NPCOMM を サービスとしてインストールしました。\nこのサービスは次回Windowsを起動したときから有効になります。"
+    IDS_INSTSERVICEFAILED   "サービスのインストールに失敗しました。"
+    IDS_SERVICEDELETED      "NPCOMMサービスを削除しました。"
+    IDS_SERVICEDELETEFAILED "NPCOMMサービスの削除に失敗しました。"
+    IDS_DRIVINSTALLED       "p-serial ドライバがインストールされました。"
+    IDS_DRIVINSTFAILED      "p-serial ドライバのインストールに失敗しました"
+    IDS_NONPCOMM            "NPCOMM.exe がカレントディレクトリに存在する必要が有ります。"
+    IDS_NODRIVER            "pserial.sys がカレントディレクトリに存在する必要が有ります。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DRIVSTARTFAILED     "p-serial ドライバのスタートに失敗しました。"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 (ｱﾒﾘｶ) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INSTNP_DIALOG DIALOGEX 0, 0, 190, 183
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Pseudo Serial Device Installer"
+FONT 10, "Terminal"
+BEGIN
+    PUSHBUTTON      "Install",IDC_INSTALL,13,58,45,15
+    PUSHBUTTON      "Uninstall",IDC_DEINSTALL,62,58,45,15
+    PUSHBUTTON      "Start now",IDC_START,112,58,41,15
+    COMBOBOX        IDC_PPORTNAME,13,27,35,40,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Start p-serial driver at system start up",IDC_AUTOSTART,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,43,155,10
+    GROUPBOX        "NPCOMM as SERVICE",IDC_SERVICEFRAME,7,89,176,88
+    CHECKBOX        "Service installed",IDC_ISSERVICE,13,115,118,10
+    EDITTEXT        IDC_EXTRAARGUMENTS,12,140,161,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Extra arguments",IDC_ARGLABEL,13,129,150,8
+    PUSHBUTTON      "Install",IDC_INSTALLSERVICE,13,156,45,15,WS_DISABLED
+    PUSHBUTTON      "Uninstall",IDC_DEINSTALLSERVICE,62,156,45,15,
+                    WS_DISABLED
+    COMBOBOX        IDC_PPORTNAME1,62,27,35,40,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PPORTNAME2,112,27,35,40,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "P-Serial driver",IDC_DRIVERFRAME,7,7,176,73
+    CONTROL         "NPCOMM",IDC_NPCOMM,"Button",BS_AUTORADIOBUTTON,13,101,
+                    42,8
+    CONTROL         "NPCOMM1",IDC_NPCOMM1,"Button",BS_AUTORADIOBUTTON,61,101,
+                    46,8
+    CONTROL         "NPCOMM2",IDC_NPCOMM2,"Button",BS_AUTORADIOBUTTON,112,
+                    101,52,8
+    LTEXT           "PCOMM",IDC_PNAME,15,16,35,8
+    LTEXT           "PCOMM1",IDC_PNAME1,63,17,35,8,WS_DISABLED
+    LTEXT           "PCOMM2",IDC_PNAME2,113,17,35,8,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_INSTNP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "About (instnp) (&A)..."
+    IDS_OSERR               "This program only runs on WindowsNT systems.\nYou don't need to use this program on Windows95."
+    IDS_APP_RUNNING         "NPCOMM is running!\nPlease exit NPCOMM.exe and all programs using \\""pseudo port\\""\n before executing this program."
+    IDS_SERVICEINSTALLED    "NPCOMM service has been installed.\nThis service activated after next boot up of Windows."
+    IDS_INSTSERVICEFAILED   "Failed to install NPCOMM service."
+    IDS_SERVICEDELETED      "NPCOMM service has been deleted."
+    IDS_SERVICEDELETEFAILED "Failed to delete NPCOMM service."
+    IDS_DRIVINSTALLED       "P-Serial driver has been installed."
+    IDS_DRIVINSTFAILED      "Failed to install P-Serial driver."
+    IDS_NONPCOMM            "NPCOMM.exe need to be located at current directory."
+    IDS_NODRIVER            "pserial.sys need to be located current directory."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DRIVSTARTFAILED     "Failed to start P-Serial driver."
+END
+
+#endif    // 英語 (ｱﾒﾘｶ) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif
+#include "res\instnp.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
